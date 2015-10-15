@@ -1,103 +1,16 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="icon" type="image/png" href="/images/favicon.png" />
-        <link href='http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
-        <script src="/js/jquery-1.7.2.min.js"></script>
-        <script src="/js/common.js"></script>
-        <script src="/js/jquery.stickyfooter.min.js"></script>
-    </head>
+<html lang="en">
 
-    <body>
-        <script>
-            var currentHours = new Date().getHours(),
-                $body = $('body'),
-                current = '';
+{% include head.html %}
 
-            if (localStorage && localStorage.time) {
-                switch (localStorage.time) {
-                    case 'dawn':
-                        $body.attr('class', 'dawn');
-                        break;
-                    case 'daylight':
-                        $body.attr('class', 'daylight');
-                        break;
-                    case 'sunset':
-                        $body.attr('class', 'sunset');
-                        break;
-                    case 'night':
-                        $body.attr('class', 'night');
-                        break;
-                    case 'night2':
-                        $body.attr('class', 'night2');
-                        break;
-                }
+<body>
 
-                current = localStorage.time;
-            } else {
-                if (currentHours >= 17 && currentHours <= 19) {
-                    $body.attr('class', 'sunset');
-                    current = 'sunset';
-                } else if ((currentHours > 19 && currentHours <= 24) || currentHours < 5) {
-                    $body.attr('class', 'night');
-                    current = 'night';
-                } else if (currentHours >= 5 && currentHours <= 7) {
-                    $body.attr('class', 'dawn');
-                    current = 'dawn';
-                } else {
-                    $body.attr('class', 'daylight');
-                    current = 'daylight';
-                }
-            }
-        </script>
-        
-        <div class="wrapper clearfix">
-            <div class="site-intro">
-                <div class="header clearfix">
-                    <h1><a href="/" title="Home">{{ site.name }}</a></h1>
-                    <h2>记录有趣的人事物，分享可重用的技术</h2>
-                </div>
+    {% include nav.html %}
 
-                <div class="preamble site-box">每天进步一点:)</div>
-            </div>
+    {{ content }}
 
-            <div class="main-wrapper">
-                <div class="site-box">
-                    {{ content }}
-                </div>
-            </div>
-        </div>
+    {% include footer.html %}
 
-        <div class="categories">
-            {% for category in site.categories %}
-                <a href="/category/?cat={{ category | first }}" title="{{ category | first }}">{{ category | first }} <span class="count">({{ category | last | size }})</span></a>
-            {% endfor %}
-        </div>
+</body>
 
-        <div class="footer s-stickyfooter">
-            <div>
-                <p class="choose">your favorite time of the day: <a class="dawn" href="javascript:;">dawn</a>, <a class="daylight" href="javascript:;">daylight</a>, <a class="sunset" href="javascript:;">sunset</a>, <a class="night" href="javascript:;">night</a>, <a class="night2" href="javascript:;">night2</a> or <a class="all" href="javascript:;">all</a></p>
-                <p>Hosted by <a href="https://github.com/moamaoa/moamaoa.github.com" target="_blank">GitHub</a> and powered by <a href="http://github.com/mojombo/jekyll" target="_blank">Jekyll</a></p>
-                <p>moamaoa@gmail.com</p>
-            </div>
-        </div>
-
-        <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'moamaoa'; // required: replace example with your forum shortname
-
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function () {
-                var s = document.createElement('script'); s.async = true;
-                s.type = 'text/javascript';
-                s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-            }());
-        </script>
-    </body>
 </html>

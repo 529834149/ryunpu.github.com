@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git Diff/Merge with Beyond Compare"
+title:  "Git Diff with Beyond Compare"
 date:   2014-5-17
 categories: Tools
 ---

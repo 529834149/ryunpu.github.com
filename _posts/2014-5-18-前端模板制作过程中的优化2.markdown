@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "前端模板制作过程中的优化2"
-date:   2014-05-18
+date:   2014-5-18
 categories: Web
 ---
 
