@@ -7,7 +7,7 @@ header-img: "img/home-bg.jpg"
 
 <div class="category">
     {% for category in site.categories %}
-        <h3>{{ category | first }} <span>({{ category | last | size }})</span></h3>
+        <h3><a href="{{ site.baseurl }}/{{ category | first }}">{{ category | first }}</a> <span>({{ category | last | size }})</span></h3>
         {% for post in category.last %}
             <p>
                 <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
@@ -16,5 +16,3 @@ header-img: "img/home-bg.jpg"
         {% endfor %}
     {% endfor %}
 </div>
-    
-

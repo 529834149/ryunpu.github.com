@@ -2,3 +2,7 @@
 h3 span { font-weight: normal; font-size: 20px; color: #444;}
 .archive a, .category a { text-decoration: none;}
 time { margin-right: .5em; color: #ccc;}
+.language-bash { position: relative; padding-left: 1.2em;}
+.language-bash::before { content: '$'; position: absolute; left: 0; right: 0; color: #008080;}
+code:empty { display: none;}
+#disqus_thread { margin-top: 3em;}
