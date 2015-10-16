@@ -1,7 +1,7 @@
 ---
 layout: page
-title: ""
-description: ""
+title: "Categories"
+description: "分类列表"
 header-img: "img/home-bg.jpg"
 ---
 
@@ -21,6 +21,8 @@ header-img: "img/home-bg.jpg"
 
 <script>
     (function() {
+        $('h1, .subheading').css('opacity', 0);
+
         var curTag = location.search.split('cat=')[1] ? location.search.split('cat=')[1].split('&')[0] : null,
             curTagClass = '.' + curTag;
 
@@ -30,9 +32,9 @@ header-img: "img/home-bg.jpg"
             $('h3').hide();
             $(curTagClass).show();
         } else {
-            $('h1').html('Categories');
-            $('.subheading').html('分类列表');
             $('.category div').show();
         }
+
+        $('h1, .subheading').css('opacity', 1);
     })();
 </script>
