@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Category
+title: Categories
 description: "分类列表"
 header-img: "img/home-bg.jpg"
 ---
 
 <div class="category">
     {% for category in site.categories %}
-        <h3><a href="{{ site.baseurl }}/{{ category | first }}">{{ category | first }}</a> <span>({{ category | last | size }})</span></h3>
+        <h3><a href="{{ site.baseurl }}/categories/{{ category | first }}">{{ category | first }}</a> <span>({{ category | last | size }})</span></h3>
         {% for post in category.last %}
             <p>
                 <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
