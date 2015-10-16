@@ -1,18 +1,38 @@
 ---
 layout: page
-title: Categories
-description: "分类列表"
+title: ""
+description: ""
 header-img: "img/home-bg.jpg"
 ---
 
 <div class="category">
     {% for category in site.categories %}
-        <h3><a href="{{ site.baseurl }}/categories/{{ category | first }}">{{ category | first }}</a> <span>({{ category | last | size }})</span></h3>
-        {% for post in category.last %}
-            <p>
-                <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-            </p>
-        {% endfor %}
+        <div class="{{ category | first }}">
+            <h3><a href="{{ site.baseurl }}/categories.html?cat={{ category | first }}">{{ category | first }}</a> <span>(<span class="size">{{ category | last | size }}</span>)</span></h3>
+            {% for post in category.last %}
+                <p>
+                    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                </p>
+            {% endfor %}
+        </div>
     {% endfor %}
 </div>
+
+<script>
+    (function() {
+        var curTag = location.search.split('cat=')[1] ? location.search.split('cat=')[1].split('&')[0] : null,
+            curTagClass = '.' + curTag;
+
+        if (curTag && $(curTagClass).length) {
+            $('h1').html(curTag);
+            $('.subheading').html($(curTagClass).find('.size').html());
+            $('h3').hide();
+            $(curTagClass).show();
+        } else {
+            $('h1').html('Categories');
+            $('.subheading').html('分类列表');
+            $('.category div').show();
+        }
+    })();
+</script>
