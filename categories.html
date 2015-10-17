@@ -26,7 +26,7 @@ header-img: "img/home-bg.jpg"
         var curTag = location.search.split('cat=')[1] ? location.search.split('cat=')[1].split('&')[0] : null,
             curTagClass = '.' + curTag;
 
-        if (curTag && $(curTagClass).length || curTag === 'js') {
+        if (!/\W/.test(curTag) && $(curTagClass).length || curTag === 'js') {
             if (curTag === 'js') {
                 curTag = 'javascript';
                 curTagClass = '.javascript';
