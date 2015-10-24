@@ -11,7 +11,3 @@ code:empty { display: none;}
 @media (max-width: 767px) {
     time { display: block;}
 }
-
-@media (min-width: 768px) {
-    .navbar-custom:not(.is-fixed) .nav li a { text-shadow: 0 0 1px #846A47;}
-}
