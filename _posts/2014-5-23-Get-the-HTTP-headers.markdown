@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Get the HTTP headers"
-date:   2014-5-24
+date:   2014-5-23
 categories: JavaScript
 ---
 

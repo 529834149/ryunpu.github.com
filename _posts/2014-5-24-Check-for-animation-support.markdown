@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Check for animation support"
-date:   2014-5-23
+date:   2014-5-24
 categories: JavaScript
 ---
 
