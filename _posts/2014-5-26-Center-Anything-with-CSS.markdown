@@ -14,13 +14,13 @@ categories: CSS
 ```
 
 ```css
-.container { display: table;}
-.container > div { display: table-cell; text-align: center; vertical-align: middle;}
-.container > div .centered { margin: auto;}
+.center-container { display: table;}
+.center-container > div { display: table-cell; text-align: center; vertical-align: middle;}
+.center-container > div .centered { margin: auto;}
 ```
 
 ```css
-.container { display: flex; -webkit-justify-content: center; justify-content: center; -webkit-align-items: center; align-items: center;}
+.center-container { display: flex; -webkit-justify-content: center; justify-content: center; -webkit-align-items: center; align-items: center;}
 ```
 
 see more: <a href="http://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/" target="_blank">Smashing</a>
