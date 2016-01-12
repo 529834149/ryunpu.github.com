@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "一些常用的UA检测"
+date:   2014-5-29
+categories: JavaScript
+---
+
+```js
+var ua = navigator.userAgent.toLowerCase();
+```
+
+```js
+var arr = /(chrome|firefox)[ \/]([\w.]+)/.exec(ua) || // Chrome & Firefox
+    /(iphone|ipad|ipod)(?:.*version)?[ \/]([\w.]+)/.exec(ua) || // Mobile IOS
+    /(android)(?:.*version)?[ \/]([\w.]+)/.exec(ua) || // Mobile Webkit
+    /(webkit|opera)(?:.*version)?[ \/]([\w.]+)/.exec(ua) || // Safari & Opera
+    /(msie) ([\w.]+)/.exec(ua) ||
+    /(trident).+rv:(\w.)+/.exec(ua) || [];
+var browser = arr[1],
+var version = parseFloat(arr[2]);
+
+switch (browser) {
+    case 'msie':
+    case 'trident':
+        browser = 'ie';
+        version = document.documentMode || version;
+        break;
+}
+```
+
+```js
+/micromessenger/.test(ua) // wechat
+/iphone|ipad|ipod/.test(ua) // ios
+/android/.test(ua) // android
+/mobile|android|kindle|silk|midp|phone|(windows .+arm|touch)/.test(ua) // mobile
+```
