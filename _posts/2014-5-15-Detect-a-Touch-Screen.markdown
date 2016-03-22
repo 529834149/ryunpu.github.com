@@ -20,7 +20,7 @@ window.addEventListener('touchstart', function setHasTouch () {
 * another way
 
 ```js
-var hasTouch = /iphone|ipod|ipad|android|windows phone/i.test(navigator.userAgent);
+var hasTouch = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 ```
 
 * not so reliable
