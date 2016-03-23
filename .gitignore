@@ -1,8 +1,5 @@
 /_site
 /_drafts
 /assets
-/temp
-/src
+temp
 .*
-build/
-node_modules

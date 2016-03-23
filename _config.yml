@@ -1,14 +1,196 @@
-# Site settings
-title: Moamaoa
-header-img: img/home-bg.jpg
-email: endless3000@163.com
-description: "三千止境 | 记录、分享和创造"
-url: "http://moamaoa.com"
-github_username:  moamaoa
+title:            Moamaoa
+description:      Record, Share and Create
+logo:             logo-bear-light.png
+disqus_shortname: moamaoa
+# Assign a default image for your site's header and footer
+default_bg:       moamaoa.jpg
+search:           true
+share:            false
+# Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
+readtime:         true
+# Specify the average Words per minute. If not defined, 180 will be used
+wpm:				      200
+# Turn on or off the fin animations in the header and footer
+triangleheader:		true
+animated_fins:	  true
+# Specify the fin color in RGB value
+fin_color:        "255,255,255"
+# Change url to your domain. Leave localhost server or blank when working locally.
+# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
+# whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
+url:       		   
 
-# Build settings
-markdown: redcarpet
-highlighter: pygments
-permalink: /:categories/:title/
-paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json"]
+# Owner/author information
+owner:
+  name:           Moamaoa
+  avatar:         avatar.jpg
+  email:          endless3000@163.com
+  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
+  description:    
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        
+  facebook:       
+  github:         moamaoa
+  stackexchange:  
+  linkedin:       
+  instagram:      
+  flickr:         
+  tumblr:         
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
+
+# Links to include in footer navigation
+# For external links add external: true
+links:
+  - title: <i class="icon-home"></i> Home
+    url: /
+  - title: <i class="icon-book"></i> Categories
+    url: /categories
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Shanghai
+future:      true
+highlighter: rouge
+markdown:    kramdown
+gems: [jekyll-paginate]
+paginate:    6
+paginate_path: page:num
+
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://moamaoa.com/'
+  relativeLinks: 
+  media: 'images'
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
+      - name: "layout"
+        field:
+          element: "hidden"
+          label: "Layout"
+          value: "post"
+      - name: "type"
+        field:
+          element: "select"
+          label: "Select Post Type"
+          placeholder: "Choose your type"
+          options:
+            - name: "Standard"
+              value: 
+            - name: "Quote"
+              value: quote
+            - name: "Status"
+              value: status
+            - name: "Photo"
+              value: photo
+            - name: "Video"
+              value: video
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          value: "An Awesome Headline!"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          placeholder: "Enter Post Description"
+      - name: "headline"
+        field:
+          element: "text"
+          label: "beadline"
+          placeholder: "Enter Post Headline"
+      - name: "modified"
+        field:
+          element: "text"
+          label: "Has this page been modified?"
+          placeholder: "YYYY-MM-DD"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add categories"
+          placeholder: "Choose categories"
+          value: personal
+          options:
+            - name: "Personal"
+              value: personal
+            - name: "Web-Development"
+              value: webdevelopment
+            - name: "Interesting"
+              value: interesting
+            - name: "Status"
+              value: status
+            - name: "Quotes"
+              value: quotes
+          alterable: true
+      - name: "tags"
+        field:
+          element: "text"
+          label: "Tags"
+          placeholder: "Enter tags, separated by spaces"
+      - name: "imagefeature"
+        field:
+          element: "text"
+          label: "Featured Image"
+          placeholder: "somefile.jpg"
+      - name: "imagecredit"
+        field:
+          element: "text"
+          label: "Image Credit"
+          placeholder: "some guy"
+      - name: "imagecreditlink"
+        field:
+          element: "text"
+          label: "Credit link for the image"
+          placeholder: "http://somewebsite.com"
+      - name: "video"
+        field:
+          element: "text"
+          label: "Insert Youtube Link"
+          placeholder: "http://youtube.com/somevideo"
+      - name: "mathjax"
+        field:
+          element: "checkbox"
+          label: "MathJax"
+          value: false
+      - name: "featured"
+        field:
+          element: "checkbox"
+          label: "Featured?"
+          hialue: false
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "Comments"
+          value: false
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "temp"]
