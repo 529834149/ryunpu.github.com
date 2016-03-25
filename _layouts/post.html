@@ -14,8 +14,8 @@
             {% else %}
             {% assign readtime = page.content | strip_html | number_of_words | append: '.0' | divided_by:180 %}
             {% endif %}
-            {% assign modifiedtime = page.modified | date: "%Y-%m-%d" %}
-            {% assign posttime = page.date | date: "%Y-%m-%d" %}
+            {% assign modifiedtime = page.modified | date: "%Y%m%d" %}
+            {% assign posttime = page.date | date: "%Y%m%d" %}
                     <header class="post-header entry-header">
                     {% if page.featured %}<div class="cursive">this post is featured</div>{% endif %}
                         {% if page.link %}
