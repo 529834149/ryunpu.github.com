@@ -1,4 +1,4 @@
-title:            Moamaoa
+title:            Pym
 description:      Record, Share and Create
 logo:             logo-bear-light.png
 disqus_shortname: moamaoa
@@ -22,7 +22,7 @@ url:
 
 # Owner/author information
 owner:
-  name:           Moamaoa
+  name:           Pym
   avatar:         moamaoa.jpg
   email:          endless3000@163.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
