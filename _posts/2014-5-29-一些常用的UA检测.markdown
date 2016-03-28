@@ -29,6 +29,7 @@ switch (browser) {
 ```
 
 ```js
+/MSIE/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) // IE
 /micromessenger/.test(ua) // wechat
 /iphone|ipad|ipod/.test(ua) // ios
 /android/.test(ua) // android
