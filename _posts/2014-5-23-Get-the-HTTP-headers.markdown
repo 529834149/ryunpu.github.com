@@ -12,3 +12,14 @@ req.send(null);
 var headers = req.getAllResponseHeaders().toLowerCase();
 alert(headers);
 ```
+
+with jQuery:
+
+```js
+$.ajax({
+    url: location.href
+})
+.complete(function(xhr) {
+    console.log(xhr.getAllResponseHeaders(), xhr.getResponseHeader('Server'));
+});
+```

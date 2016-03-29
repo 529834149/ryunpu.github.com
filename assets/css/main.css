@@ -4,3 +4,4 @@ p code, li code { white-space: pre-wrap; }
 h4, .blog-title { text-transform: none; }
 h2 { margin-top: 45px; margin-bottom: 15px; }
 .post-info { margin-bottom: 48px; }
+.post-template .post-body p { margin: 35px 0 10px;}
