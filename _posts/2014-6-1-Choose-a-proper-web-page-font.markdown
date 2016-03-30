@@ -3,6 +3,7 @@ layout: post
 title:  "Choose a proper web page font"
 date:   2014-6-1
 categories: CSS
+comments: true
 ---
 
 * one suggestion

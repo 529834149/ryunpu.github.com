@@ -3,6 +3,7 @@ layout: post
 title:  "CSS transform and animation"
 date:   2014-6-2
 categories: CSS
+comments: true
 ---
 
 <div class="css-demo-1"><span></span><span></span><span></span></div>
