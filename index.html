@@ -100,7 +100,7 @@ tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
 	        {% endif %}
 	        {% if post.type == 'video' %}
 	        <div class="row">
-	            <article class="post post col-md-8 col-md-offset-2">
+	            <article class="post post col-md-10 col-md-offset-1">
 	               <header class="post-header">
 	                    {% if post.link %}
 	                    <h2 class="post-title text-center lighter">
@@ -140,7 +140,7 @@ tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
 	        {% endif %}
 	        {% if post.type == 'photo' %}
 	        <div class="row">
-	            <article class="post post col-md-8 col-md-offset-2">
+	            <article class="post post col-md-10 col-md-offset-1">
 	               <header class="post-header">
 	               		{% if post.photo %}<figure><a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}/images/{{ post.photo }}" alt="{{ post.title }}" itemprop="image"></a></figure>{% else %}<figure><a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}/images/{{ post.imagefeature }}" alt="{{ post.title }}" itemprop="image"></a></figure>{% endif %}
 	                    {% if post.link %}
@@ -175,7 +175,7 @@ tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
 	        {% endif %}
 	        {% if post.type == 'text' %}
 	        <div class="row">
-	            <article class="post post col-md-8 col-md-offset-2">
+	            <article class="post post col-md-10 col-md-offset-1">
 	               <header class="post-header">
 	               {% if post.featured %}<div class="cursive">this post is featured</div>{% endif %}
 	                    {% if post.link %}
@@ -212,7 +212,7 @@ tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
 	        {% endif %}
 	        {% if post.type != 'video' and post.type != 'status' and post.type != 'quote' and post.type != 'photo' %}
 	        <div class="row">
-	            <article class="post post col-md-8 col-md-offset-2">
+	            <article class="post post col-md-10 col-md-offset-1">
 	               <header class="post-header">
 	               {% if post.featured %}<div class="cursive">this post is featured</div>{% endif %}
 	                    {% if post.link %}
@@ -234,7 +234,7 @@ tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
 	{% endfor %}
 {% if paginator.total_pages > 1 %}
         <div class="row text-center text-caps">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-10 col-md-offset-1">
                 <nav class="pagination" role="navigation">
 {% if paginator.previous_page %}
 {% if paginator.previous_page == 1 %}
@@ -342,7 +342,7 @@ tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
 	        {% endif %}
 	        {% if post.type == 'video' %}
 	        <div class="row">
-	            <article class="post post col-md-8 col-md-offset-2">
+	            <article class="post post col-md-10 col-md-offset-1">
 	               <header class="post-header">
 	                    {% if post.link %}
 	                    <h2 class="post-title text-center lighter">
@@ -382,7 +382,7 @@ tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
 	        {% endif %}
 	        {% if post.type == 'photo' %}
 	        <div class="row">
-	            <article class="post post col-md-8 col-md-offset-2">
+	            <article class="post post col-md-10 col-md-offset-1">
 	               <header class="post-header">
 	               		{% if post.photo %}<figure><a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}/images/{{ post.photo }}" alt="{{ post.title }}" itemprop="image"></a></figure>{% else %}<figure><a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}/images/{{ post.imagefeature }}" alt="{{ post.title }}" itemprop="image"></a></figure>{% endif %}
 	                    {% if post.link %}
@@ -417,7 +417,7 @@ tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
 	        {% endif %}
 	        {% if post.type == 'text' %}
 	        <div class="row">
-	            <article class="post post col-md-8 col-md-offset-2">
+	            <article class="post post col-md-10 col-md-offset-1">
 	               <header class="post-header">
 	               {% if post.featured %}<div class="cursive">this post is featured</div>{% endif %}
 	                    {% if post.link %}
@@ -454,7 +454,7 @@ tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
 	        {% endif %}
 	        {% if post.type != 'video' and post.type != 'status' and post.type != 'quote' and post.type != 'photo' %}
 	        <div class="row">
-	            <article class="post post col-md-8 col-md-offset-2">
+	            <article class="post post col-md-10 col-md-offset-1">
 	               <header class="post-header">
 	               {% if post.featured %}<div class="cursive">this post is featured</div>{% endif %}
 	                    {% if post.link %}

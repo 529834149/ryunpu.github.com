@@ -8,7 +8,7 @@
 <div id="main" class="content" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
     <div class="container">
         <div class="row">
-            <article class="post col-md-8 col-md-offset-2 hentry" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <article class="post col-md-10 col-md-offset-1 hentry" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
             {% if site.wpm %}
             {% assign readtime = page.content | strip_html | number_of_words | append: '.0' | divided_by:site.wpm %}
             {% else %}
@@ -47,9 +47,13 @@
                     </div>
         </div>
                     <footer class="post-footer entry-meta">
-                        {% if site.share %}{% include share.html %}{% endif %}
-                        {% include signoff.html %}
-                        {% if site.disqus_shortname and page.comments == true %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                {% if site.share %}{% include share.html %}{% endif %}
+                                {% include signoff.html %}
+                                {% if site.disqus_shortname and page.comments == true %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
+                            </div>
+                        </div>
                     </footer>
             </article>
     </div>
