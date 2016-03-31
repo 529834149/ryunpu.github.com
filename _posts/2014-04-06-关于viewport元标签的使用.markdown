@@ -23,4 +23,20 @@ categories: Mobile
 <meta name="viewport" content="width=640,user-scalable=0,target-densitydpi=device-dpi">
 ```
 
+* 兼容性:
+
+```js
+if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+    var version = parseFloat(RegExp.$1);
+    if (version > 2.3) {
+        var phoneScale = parseInt(window.screen.width) / 480;
+        document.write('<meta name="viewport" content="width=480, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+    } else {
+        document.write('<meta name="viewport" content="width=480, target-densitydpi=device-dpi">');
+    }
+} else {
+    document.write('<meta name="viewport" content="width=480, user-scalable=no, target-densitydpi=device-dpi">');
+}
+```
+
 see more: <a href="https://developer.mozilla.org/zh-CN/docs/Mobile/Viewport_meta_tag" target="_blank">mozilla docs</a>
