@@ -750,7 +750,7 @@ html {
 /* THEME FONTS */
 /* ----------- */
 body {
-  font-family: 'Lantinghei SC', 'Microsoft YaHei', serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Lantinghei SC","Microsoft Yahei",sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing:grayscale;
 }
@@ -758,7 +758,7 @@ body input,
 body textarea,
 body .btn,
 body button {
-  font-family: 'Lantinghei SC', 'Microsoft YaHei', serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Lantinghei SC","Microsoft Yahei",sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing:grayscale;
 }
