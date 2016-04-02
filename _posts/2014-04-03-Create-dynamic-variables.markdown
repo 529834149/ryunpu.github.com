@@ -2,7 +2,7 @@
 layout: post
 title:  "Create dynamic variables"
 date:   2014-04-03
-categories: Javascript
+categories: JavaScript
 ---
 
 with eval():

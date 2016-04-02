@@ -2,7 +2,7 @@
 layout: post
 title:  "Trigger click on an anchor"
 date:   2014-04-02
-categories: Javascript
+categories: JavaScript
 ---
 
 ```js

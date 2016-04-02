@@ -2,7 +2,7 @@
 layout: post
 title:  "Code conventions and best practices for javascript"
 date:   2014-04-11
-categories: Javascript
+categories: JavaScript
 ---
 
 * JavaScript programs should be stored in and delivered as .js files

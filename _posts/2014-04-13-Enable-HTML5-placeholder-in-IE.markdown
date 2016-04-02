@@ -2,7 +2,7 @@
 layout: post
 title:  "Enable HTML5 placeholder in IE"
 date:   2014-04-13
-categories: Javascript
+categories: JavaScript
 ---
 
 simply using the function below(not suggested):

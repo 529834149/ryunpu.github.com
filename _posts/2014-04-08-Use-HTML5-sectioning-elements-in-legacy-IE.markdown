@@ -2,7 +2,7 @@
 layout: post
 title:  "Use HTML5 sectioning elements in legacy IE"
 date:   2014-04-08
-categories: Javascript
+categories: JavaScript
 ---
 
 ```js
