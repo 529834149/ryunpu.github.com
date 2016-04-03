@@ -5,7 +5,7 @@ date:   2014-6-4
 categories: JavaScript
 ---
 
-###### a way:
+###### method 1:
 
 ```js
 function strip(html) {
