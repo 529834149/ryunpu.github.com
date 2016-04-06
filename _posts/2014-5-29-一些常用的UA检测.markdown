@@ -29,9 +29,19 @@ switch (browser) {
 ```
 
 ```js
-/MSIE/i.test(ua) || /rv:11.0/i.test(ua) // IE
+/(msie\s|trident.*rv:)([\w.]+)/.test(ua) // IE
 /micromessenger/.test(ua) // wechat
 /iphone|ipad|ipod/.test(ua) // ios
 /android/.test(ua) // android
 /mobile|android|kindle|silk|midp|phone|(windows .+arm|touch)/.test(ua) // mobile
+```
+
+###### get IE version
+
+```js
+function getIEVersion() {
+    var ua = navigator.userAgent.toLowerCase();
+    var arr = /(msie) ([\w.]+)/.exec(ua) || /(trident).+rv:(\w.)+/.exec(ua) || [];
+    return document.documentMode || parseFloat(arr[2]);
+}
 ```
