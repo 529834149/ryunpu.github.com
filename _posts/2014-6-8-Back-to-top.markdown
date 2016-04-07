@@ -48,9 +48,10 @@ function backToTop(selector, threshold, speed) {
 ###### extra css:
 
 ```css
-.animated { animation-duration: .5s;}
+.animated { animation-duration: .5s; animation-fill-mode: both;}
 .animated.infinite { animation-iteration-count: infinite;}
 .fadeInUp { animation-name: fadeInUp;}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;

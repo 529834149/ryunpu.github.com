@@ -28,7 +28,7 @@ div[class*="css-demo"], div[id*="js-demo"] { margin-bottom: .5em; }
     }
 }
 
-.animated { animation-duration: .5s;}
+.animated { animation-duration: .5s; animation-fill-mode: both;}
 .animated.infinite { animation-iteration-count: infinite;}
 .fadeInUp { animation-name: fadeInUp;}
 
