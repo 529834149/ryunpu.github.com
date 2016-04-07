@@ -1,4 +1,4 @@
-div[class*="css-demo"] { margin-bottom: .5em; }
+div[class*="css-demo"], div[id*="js-demo"] { margin-bottom: .5em; }
 
 .css-demo-1 { position: relative; width: 25px; height: 35px; cursor: pointer;}
 .css-demo-1 span { position: absolute; left: 0; top: 7px; width: 100%; height: 2px; background: #444; transition: all .2s; transform-origin: right center;}
