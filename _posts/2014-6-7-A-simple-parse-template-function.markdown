@@ -5,8 +5,6 @@ date:   2014-6-7
 categories: JavaScript
 ---
 
-<div id="js-demo-1"></div>
-
 ```js
 function parseTpl(tpl, obj) {
     var tpl;
@@ -19,7 +17,11 @@ function parseTpl(tpl, obj) {
 
     return tpl;
 }
+```
 
+<div id="js-demo-1"></div>
+
+```js
 $('#js-demo-1').html(parseTpl('Hello, <strong>$name</strong>, Today is <strong>$date</strong>', {
     name: 'Pym',
     date: new Date().toLocaleString()
