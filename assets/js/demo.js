@@ -10,12 +10,40 @@ $(function() {
             }
 
             return tpl;
+        },
+        backToTop: function(selector, threshold, speed) {
+            $(window).on('scroll', function() {
+                if ($(this).scrollTop() > (threshold ? threshold: $(this).height() / 2)) {
+                    $(selector).fadeIn();
+                } else {
+                    $(selector).fadeOut();
+                }
+            });
+
+            $(selector).on('click', function(e) {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, speed ? speed : 300);
+
+                e.preventDefault();
+            })
+            .hover(
+                function() {
+                    $(this).find('i').addClass('fadeInUp');
+                },
+                function() {
+                    $(this).find('i').removeClass('fadeInUp');
+                }
+            );
         }
     };
 
     // parseTpl demo
-    $('#js-demo-1').length && $('#js-demo-1').html(utility.parseTpl('Hello, <strong>$name</strong>, Today is <strong>$date</strong>', {
+    $('#js-demo-1').html(utility.parseTpl('Hello, <strong>$name</strong>, Today is <strong>$date</strong>', {
         name: 'Pym',
         date: new Date().toLocaleString()
     }));
+
+    // backToTop demo
+    utility.backToTop('#backToTop');
 });

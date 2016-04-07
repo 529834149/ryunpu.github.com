@@ -6,7 +6,7 @@ p code, li code { white-space: pre-wrap; }
 h4, .blog-title { text-transform: none; }
 h2 { margin-top: 45px; margin-bottom: 15px; }
 h3 { margin-top: 30px; text-transform: none; }
-h6 { margin-top: 20px; margin-bottom: 5px; text-transform: none;}
+h6 { margin-top: 20px; margin-bottom: 5px; font-size: 14px; text-transform: none;}
 .post-info { margin-bottom: 48px; }
 .post-template .post-body p { margin: 35px 0 10px;}
 .post-template .post-body blockquote p { margin-top: 10px; }

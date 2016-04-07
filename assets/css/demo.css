@@ -27,3 +27,24 @@ div[class*="css-demo"], div[id*="js-demo"] { margin-bottom: .5em; }
         opacity: 0;
     }
 }
+
+.animated { animation-duration: .5s;}
+.animated.infinite { animation-iteration-count: infinite;}
+.fadeInUp { animation-name: fadeInUp;}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+#backToTop { display: none; width: 36px; height: 36px; text-align: center; line-height: 36px; border-radius: 2px; color: #fff; background: #1A1F25; cursor: pointer;}
+
+@media (max-width: 767px) {
+    #backToTop { width: 30px; height: 30px; line-height: 30px;}
+}
