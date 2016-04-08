@@ -20,7 +20,6 @@ categories: CSS
     content: " "; /* 1 */
     display: table; /* 2 */
 }
-
 .cf:after {
     clear: both;
 }
