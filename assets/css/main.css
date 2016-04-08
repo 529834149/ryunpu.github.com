@@ -1,5 +1,5 @@
 body { font-size: 14px; }
-a:hover, a:focus { outline: none; text-decoration: none;}
+a:hover, a:focus { outline: none; text-decoration: none; color: #444;}
 p code, li code { white-space: pre-wrap; }
 .brand img { position: relative; top: -1em; max-width: 72px; }
 .post-avatar { max-width: 100px; }

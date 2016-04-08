@@ -19,6 +19,8 @@ $('[data-toggle="popover"]').data('bs.popover').options.content = 'new content';
 $('[data-toggle="popover"]').popover('show');
 ```
 
+to dismiss the popover on iOS, you may use ```body { cursor: pointer; }```
+
 > Specific markup required for dismiss-on-next-click
 For proper cross-browser and cross-platform behavior, you must use the ```<a>``` tag, not the ```<button>``` tag, and you also must include the **role="button"** and **tabindex** attributes.
 
