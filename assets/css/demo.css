@@ -1,5 +1,6 @@
 div[class*="css-demo"], div[id*="js-demo"] { margin-bottom: .5em; }
 
+
 .css-demo-1 { position: relative; width: 25px; height: 35px; cursor: pointer;}
 .css-demo-1 span { position: absolute; left: 0; top: 7px; width: 100%; height: 2px; background: #444; transition: all .2s; transform-origin: right center;}
 .css-demo-1 span:nth-child(2) { top: 16px;}
@@ -8,9 +9,11 @@ div[class*="css-demo"], div[id*="js-demo"] { margin-bottom: .5em; }
 .css-demo-1:hover span:nth-child(2) { height: 0;}
 .css-demo-1:hover span:last-child { transform: rotate(45deg);}
 
+
 .css-demo-2 { position: relative; display: inline-block; cursor: pointer;}
 .css-demo-2:before { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background: #444; transition: transform .2s; backface-visibility: hidden; transform: scaleX(0);}
 .css-demo-2:hover:before { transform: scaleX(1);}
+
 
 .css-demo-3 { width: 32px; height: 32px; border: 2px solid #444; border-radius: 50%; animation: pulsecircle .7s linear infinite;}
 
@@ -28,6 +31,7 @@ div[class*="css-demo"], div[id*="js-demo"] { margin-bottom: .5em; }
     }
 }
 
+
 .animated { animation-duration: .5s; animation-fill-mode: both;}
 .animated.infinite { animation-iteration-count: infinite;}
 .fadeInUp { animation-name: fadeInUp;}
@@ -42,6 +46,7 @@ div[class*="css-demo"], div[id*="js-demo"] { margin-bottom: .5em; }
         transform: none;
     }
 }
+
 
 #backToTop { display: none; width: 36px; height: 36px; text-align: center; line-height: 36px; border-radius: 2px; color: #fff; background: #1A1F25; cursor: pointer;}
 

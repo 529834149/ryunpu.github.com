@@ -39,11 +39,11 @@ $(function() {
     };
 
     // parseTpl demo
-    $('#js-demo-1').html(utility.parseTpl('Hello, <strong>$name</strong>, Today is <strong>$date</strong>', {
+    $('#js-demo-1').length && $('#js-demo-1').html(utility.parseTpl('Hello, <strong>$name</strong>, Today is <strong>$date</strong>', {
         name: 'Pym',
         date: new Date().toLocaleString()
     }));
 
     // backToTop demo
-    utility.backToTop('#backToTop');
+    $('#backToTop').length && utility.backToTop('#backToTop');
 });
