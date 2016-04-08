@@ -15,7 +15,7 @@ $('[data-toggle="popover"]').popover({
     placement: 'bottom'
 });
 
-$('[data-toggle="popover"]').data('bs.popover').options.content = popover;
+$('[data-toggle="popover"]').data('bs.popover').options.content = 'new content';
 $('[data-toggle="popover"]').popover('show');
 ```
 
