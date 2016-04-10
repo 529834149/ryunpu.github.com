@@ -7,15 +7,17 @@ categories: JavaScript
 
 ```js
 function backToTop(selector, threshold, speed) {
+    var $el = $(selector);
+
     $(window).on('scroll', function() {
         if ($(this).scrollTop() > (threshold ? threshold: $(this).height() / 2)) {
-            $(selector).fadeIn();
+            $el.fadeIn();
         } else {
-            $(selector).fadeOut();
+            $el.fadeOut();
         }
     });
 
-    $(selector).on('click', function(e) {
+    $el.on('click', function(e) {
         $('html, body').animate({
             scrollTop: 0
         }, speed ? speed : 300);
