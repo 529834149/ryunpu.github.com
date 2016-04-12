@@ -44,3 +44,13 @@ categories: CSS
     }
 }
 ```
+
+<div class="css-demo-4"><i class="icon-home"></i></div>
+
+```css
+.css-demo-4 { position: relative; width: 40px; height: 40px; box-shadow: 0 0 1px #666; border-radius: 50%; font-size: 1.5em; line-height: 40px; text-align: center; color: #666; transition: .5s cubic-bezier(.3,0,0,1.3);}
+.css-demo-4:before { content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: 0; border-radius: 50%; background: #39c492; opacity: 0; transform: scale(0,0); transition: .5s cubic-bezier(.3,0,0,1.3);}
+.css-demo-4:hover { color: #fff; box-shadow: 0 0 1px #39c492;}
+.css-demo-4:hover:before { opacity: 1; transform: scale(1,1);}
+.css-demo-4 i { position: relative; }
+```
