@@ -38,24 +38,33 @@ $(function() {
                 }
             );
         },
-        affixContent: function(selector, threshold) {
+        affixContent: function(selector, target, offset) {
             var $el = $(selector);
             var position = $el.css('position');
             var top = $el.css('top');
-            var offset = threshold ? threshold : $el.offset().top;
+            var $target = $(target);
+            var hasTarget = $target.length;
             var affixed = false;
-            
+            var threshold;
+
+            function getThreshold() {
+                var offsetTop = hasTarget ? $target.offset().top : $el.offset().top
+                if (!isNaN(offset)) offsetTop += offset;
+                return offsetTop;
+            }
+
             function reposition() {
                 var scrollTop = $(window).scrollTop();
+                var finalThreshold = hasTarget ? getThreshold() : threshold;
                 
-                if (!affixed && scrollTop > offset) {
+                if (!affixed && scrollTop > finalThreshold) {
                     $el.addClass('fixed').css({
                         position: 'fixed',
                         top: 0
                     });
 
                     affixed = true;
-                } else if (affixed && scrollTop <= offset) {
+                } else if (affixed && scrollTop <= finalThreshold) {
                     $el.removeClass('fixed').css({
                         position: position,
                         top: top
@@ -65,9 +74,17 @@ $(function() {
                 }
             }
 
+            threshold = getThreshold();
             reposition();
             $(window).on('scroll', reposition);
-            $(window).on('resize', function() { !affixed && (offset = threshold ? threshold : $el.offset().top); });
+            $(window).on('resize', function() {
+                if (!hasTarget) {
+                    $el.removeClass('fixed').css({ position: position, top: top});
+                    threshold = getThreshold();
+                    affixed = false;
+                    reposition();
+                }
+            });
         }
     };
 
