@@ -17,11 +17,10 @@ function stickFooter(selector) {
             bottom: bottom
         });
         
+        var bodyHeight = $('body').height();
         var winHeight = $(window).height();
-        var offsetTop = $el.offset().top;
-        var outerHeight = $el.outerHeight();
         
-        if (offsetTop + outerHeight < winHeight) {
+        if (bodyHeight < winHeight) {
             $el.addClass('fixed').css({
                 position: 'fixed',
                 bottom: 0
