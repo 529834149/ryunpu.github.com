@@ -82,7 +82,7 @@ kramdown:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://moamaoa.com/'
+  siteurl: 'http://moamaoa.com'
   relativeLinks: 
   media: 'images'
   metadata:

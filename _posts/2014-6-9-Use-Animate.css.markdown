@@ -22,4 +22,4 @@ categories: CSS
 }
 ```
 
-###### <a href="http://moamaoa.com/Plugins/css/animate/demo.html" target="_blank">demo</a>
+###### <a href="{{ site.prose.siteurl }}/Plugins/css/animate/demo.html" target="_blank">demo</a>
