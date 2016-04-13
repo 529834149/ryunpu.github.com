@@ -1,5 +1,5 @@
 $(function() {
-    window.utility = {
+    window.util = {
         parseTpl: function(tpl, obj) {
             var tpl;
 
@@ -37,15 +37,49 @@ $(function() {
                     $(this).find('i').removeClass('fadeInUp');
                 }
             );
+        },
+        affixContent: function(selector, threshold) {
+            var $el = $(selector);
+            var position = $el.css('position');
+            var top = $el.css('top');
+            var offset = threshold ? threshold : $el.offset().top;
+            var affixed = false;
+            
+            function reposition() {
+                var scrollTop = $(window).scrollTop();
+                
+                if (!affixed && scrollTop > offset) {
+                    $el.addClass('fixed').css({
+                        position: 'fixed',
+                        top: 0
+                    });
+
+                    affixed = true;
+                } else if (affixed && scrollTop <= offset) {
+                    $el.removeClass('fixed').css({
+                        position: position,
+                        top: top
+                    });
+
+                    affixed = false;
+                }
+            }
+
+            reposition();
+            $(window).on('scroll', reposition);
+            $(window).on('resize', function() { !affixed && (offset = threshold ? threshold : $el.offset().top); });
         }
     };
 
     // parseTpl demo
-    $('#js-demo-1').length && $('#js-demo-1').html(utility.parseTpl('Hello, <strong>$name</strong>, Today is <strong>$date</strong>', {
+    $('#js-demo-1').length && $('#js-demo-1').html(util.parseTpl('Hello, <strong>$name</strong>, Today is <strong>$date</strong>', {
         name: 'Pym',
         date: new Date().toLocaleString()
     }));
 
     // backToTop demo
-    $('#backToTop').length && utility.backToTop('#backToTop');
+    $('#backToTop').length && util.backToTop('#backToTop');
+
+    // affixContent demo
+    $('#affixContent').length && util.affixContent('#affixContent');
 });
