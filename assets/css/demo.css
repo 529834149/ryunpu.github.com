@@ -59,7 +59,7 @@ div[class*="css-demo"], div[class*="js-demo"], div[id*="js-demo"] { margin: 10px
     #backToTop { width: 30px; height: 30px; line-height: 30px;}
 }
 
-#affixContent { display: inline-block; padding: 5px 20px; border-radius: 4px; background: #f5f5f5; box-shadow: 0 0 1px #ccc;}
+#affixContent { display: inline-block; padding: 5px 20px; border-radius: 3px; background: #f5f5f5; box-shadow: 0 0 1px #ccc;}
 #affixContent.fixed { margin-top: 0; }
 
 
