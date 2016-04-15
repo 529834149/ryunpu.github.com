@@ -39,5 +39,6 @@ for (var i = 0, listLength = hackList.length; i < listLength; i++) {
     for (var j = 0, childLength = children.length; j < childLength; j++) {
         children[j].style.fontSize = 'inherit';
     }
+    hackList[i].removeAttribute('class');
 }
 ```
