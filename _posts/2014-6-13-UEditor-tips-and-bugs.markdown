@@ -44,7 +44,6 @@ for (var i = 0, listLength = hackList.length; i < listLength; i++) {
             grandchildren[k].style.fontSize = 'inherit';
         }
     }
-    
     hackList[i].removeAttribute('class');
 }
 ```
