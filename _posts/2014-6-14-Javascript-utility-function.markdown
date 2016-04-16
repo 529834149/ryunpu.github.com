@@ -44,7 +44,7 @@ window.utility = {
 
             if (num <= 1) {
                 clearInterval(counter);
-                setTimeout(function() { link[0].click(); }, 1000);
+                link[0].click();
             }
         }, 1000);
     },
