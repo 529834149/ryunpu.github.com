@@ -6,7 +6,7 @@ categories: JavaScript
 ---
 
 ```js
-window.utility = {
+window.util = {
     /**
      * parseTpl('Hello, <strong>$name</strong>, Today is <strong>$date</strong>', { name: 'Pym', date: new Date().toLocaleString() })
      * Hello, Pym, Today is 2014/6/14 下午6:16:18
