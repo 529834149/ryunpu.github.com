@@ -1,15 +1,15 @@
 body { font-size: 14px; }
 a:hover, a:focus { outline: none; text-decoration: none; color: #444;}
-p code, li code { white-space: pre-wrap; }
+p code, li code { margin-left: 5px; margin-right: 5px; white-space: pre-wrap; }
 .brand img { position: relative; top: -1em; max-width: 72px; }
 .post-avatar { max-width: 100px; }
 h4, .blog-title { text-transform: none; }
 h2 { margin-top: 45px; margin-bottom: 15px; }
 h3 { margin-top: 30px; text-transform: none; }
-h6 { margin-top: 20px; margin-bottom: 5px; font-size: 14px; text-transform: none;}
+h6 { margin-top: 40px; margin-bottom: 15px; font-size: 14px; text-transform: none;}
 .post-info { margin-bottom: 48px; }
-.post-template .post-body p { margin: 35px 0 10px;}
-.post-template .post-body blockquote p { margin-top: 10px; }
+.post-template .post-body p { margin: 20px 0;}
+.post-template .post-body blockquote p { margin-top: 10px; margin-bottom: 10px;}
 .post-template .post-body blockquote .lead { font-size: 14px; }
 .post-template .post-body h6 + p { margin-top: 0;}
 .lead { font-size: inherit; }
