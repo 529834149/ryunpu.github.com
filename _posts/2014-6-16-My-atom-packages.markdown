@@ -114,3 +114,7 @@ Quickly toggle between single and double quotes ```cmd-"```
 ### [select-rectangle](https://atom.io/packages/select-rectangle)
 
 Select rectangle region ```alt-s```
+
+### [copy-path](Copy file paths in variable styles)
+
+Copy file paths in variable styles
