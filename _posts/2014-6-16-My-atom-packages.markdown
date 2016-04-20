@@ -130,3 +130,7 @@ JavaScript & NodeJS Snippets for Atom
 ### [turbo-javascript](https://atom.io/packages/turbo-javascript)
 
 A collection of commands and snippets for optimizing Javascript and Typescript development productivity
+
+### [language-vue](https://atom.io/packages/language-vue)
+
+Syntax highlighting for vue component files
