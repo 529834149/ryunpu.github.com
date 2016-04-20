@@ -126,3 +126,7 @@ Launch a http server with live reload capability
 ### [javascript-snippets](https://atom.io/packages/javascript-snippets)
 
 JavaScript & NodeJS Snippets for Atom
+
+### [turbo-javascript](https://atom.io/packages/turbo-javascript)
+
+A collection of commands and snippets for optimizing Javascript and Typescript development productivity
