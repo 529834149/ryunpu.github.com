@@ -122,3 +122,7 @@ Copy file paths in variable styles
 ### [atom-live-server](https://atom.io/packages/atom-live-server)
 
 Launch a http server with live reload capability
+
+### [javascript-snippets](https://atom.io/packages/javascript-snippets)
+
+JavaScript & NodeJS Snippets for Atom
