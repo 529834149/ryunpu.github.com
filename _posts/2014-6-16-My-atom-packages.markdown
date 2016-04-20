@@ -118,3 +118,7 @@ Select rectangle region ```alt-s```
 ### [copy-path](https://atom.io/packages/copy-path)
 
 Copy file paths in variable styles
+
+### [atom-live-server](https://atom.io/packages/atom-live-server)
+
+Launch a http server with live reload capability
