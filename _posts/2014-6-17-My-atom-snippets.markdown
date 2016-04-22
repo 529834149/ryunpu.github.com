@@ -30,7 +30,7 @@ categories: Tools
     'body': '<script src="https://cdn.jsdelivr.net/bootstrap/3.3.6/js/bootstrap.min.js"></script>'
   'vue1.0.21.js':
     'prefix': 'pl-vue1'
-    'body': '<script src="https://cdn.jsdelivr.net/g/vue@1.0.21"></script>'
+    'body': '<script src="https://cdn.jsdelivr.net/vue/1.0.21/vue.js"></script>'
   'jquery1.12.3.js':
     'prefix': 'pl-jquery1'
     'body': '<script src="https://cdn.jsdelivr.net/jquery/1.12.3/jquery.min.js"></script>'

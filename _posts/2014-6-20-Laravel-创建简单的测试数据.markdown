@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "Laravel 创建简单的测试数据"
+date:   2014-6-20
+categories: Laravel
+---
+
+###### 1. 创建一个新的模型类 Todo
+
+`php artisan make:model Todo -m`
+
+###### 2. 在 *xxx_create_todos_table.php* 里创建表结构
+
+```php
+$table->increments('id');
+$table->text('item');
+$table->boolean('completed')->default(0);
+$table->timestamps();
+```
+
+###### 3. 数据库迁移
+
+`php artisan migrate`
+
+###### 4. 在 *ModelFactory.php* 里定义 Todo
+
+```php
+$factory->define(App\Todo::class, function (Faker\Generator $faker) {
+    return [
+        'item' => $faker->paragraph
+    ];
+});
+```
+
+###### 5. 插入数据
+
+`php artisan tinker`
+
+`factory(App\Todo::class, 20)->create()`
+
+###### 6. 在 *routes.php* 里注册路由
+
+```
+Route::get('api/todos', function () {
+    return App\Todo::latest()->get();
+});
+```
