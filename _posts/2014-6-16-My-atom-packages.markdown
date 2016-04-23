@@ -134,3 +134,7 @@ A collection of commands and snippets for optimizing Javascript and Typescript d
 ### [language-vue](https://atom.io/packages/language-vue)
 
 Syntax highlighting for vue component files
+
+### [caniuse](https://atom.io/packages/caniuse)
+
+Quick access to the caniuse.com support tables
