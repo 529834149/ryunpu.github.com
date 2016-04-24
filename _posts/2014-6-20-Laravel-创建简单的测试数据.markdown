@@ -41,7 +41,23 @@ $factory->define(App\Todo::class, function (Faker\Generator $faker) {
 ###### 6. 在 *routes.php* 里注册路由
 
 ```
-Route::get('api/todos', function () {
-    return App\Todo::latest()->get();
+Route::get('/api/todos', function () {
+    return App\Todo::orderBy('created_at', 'desc')->get();
+});
+
+Route::delete('/api/todos/{id}', function ($id) {
+    App\Todo::findOrFail($id)->delete();
+});
+
+Route::post('/api/todos', function () {
+    $todo = new App\Todo;
+    $todo->item = request()->item;
+    $todo->save();
+});
+
+Route::put('/api/todos/{id}', function ($id) {
+    $todo = App\Todo::find($id);
+    $todo->item = request()->item;
+    $todo->save();
 });
 ```
