@@ -54,6 +54,7 @@ router.start({}, '#app');
 
 ###### tasks.vue
 
+{% raw %}
 ```html
 <template>
     <h3>My Tasks <span v-show="list.length">({{ list.length }})</span></h3>
@@ -65,7 +66,7 @@ router.start({}, '#app');
 
     <ul class="list-group">
         <li v-for="task in list" class="list-group-item">
-            {{ task.body }}
+             {{ task.body }}
             <strong @click="deleteTask(task)">x</strong>
         </li>
     </ul>
@@ -109,3 +110,4 @@ router.start({}, '#app');
     };
 </script>
 ```
+{% endraw %}
