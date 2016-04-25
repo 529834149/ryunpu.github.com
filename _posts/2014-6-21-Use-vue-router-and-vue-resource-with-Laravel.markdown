@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A vue-router and vue-resource demo with Laravel"
+title:  "Use vue-router and vue-resource with Laravel"
 date:   2014-6-20
 categories: Vue
 ---
