@@ -3,7 +3,6 @@ layout: post
 title:  "Commands for Packager managers"
 date:   2014-5-9
 categories: Tools
-comments: true
 ---
 
 <table class="table table-bordered">

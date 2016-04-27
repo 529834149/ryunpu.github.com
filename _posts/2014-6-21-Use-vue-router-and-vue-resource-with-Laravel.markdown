@@ -3,6 +3,7 @@ layout: post
 title:  "Use vue-router and vue-resource with Laravel"
 date:   2014-6-21
 categories: Vue
+comments: true
 ---
 
 ###### html
