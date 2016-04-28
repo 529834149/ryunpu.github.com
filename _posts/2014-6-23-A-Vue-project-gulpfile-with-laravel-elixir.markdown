@@ -12,6 +12,10 @@ require('laravel-elixir-livereload');
 require('laravel-elixir-vueify');
 require('laravel-elixir-compress');
 
+var production = elixir.config.production;
+var vue = '../../node_modules/vue/dist/vue.js';
+if (production) vue = '../../node_modules/vue/dist/vue.min.js';
+
 elixir(function(mix) {
     mix
         .sass([
@@ -23,7 +27,7 @@ elixir(function(mix) {
         .browserify('pages/index.js', 'public/js/pages')
 
         .scripts([
-            '../../node_modules/vue/dist/vue.js',
+            vue,
             '../../node_modules/vue-resource/dist/vue-resource.min.js',
             '../../node_modules/vue-router/dist/vue-router.min.js',
             'app.js',
@@ -34,8 +38,10 @@ elixir(function(mix) {
             'js/main.js',
         ])
 
-        .compress()
-
         .livereload();
+
+    if (production) {
+        mix.compress();
+    }
 });
 ```
