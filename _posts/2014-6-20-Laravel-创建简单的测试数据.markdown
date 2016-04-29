@@ -61,3 +61,5 @@ Route::put('/api/todos/{id}', function ($id) {
     $todo->save();
 });
 ```
+
+###### see also: [Available Column Types](https://laravel.com/docs/5.1/migrations#creating-columns), [Faker](https://github.com/fzaninotto/Faker)
