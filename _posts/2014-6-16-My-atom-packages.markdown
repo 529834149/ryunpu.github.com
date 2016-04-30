@@ -138,3 +138,15 @@ Syntax highlighting for vue component files
 ### [caniuse](https://atom.io/packages/caniuse)
 
 Quick access to the caniuse.com support tables
+
+### [icon-fonts](https://atom.io/packages/icon-fonts)
+
+Atom snippets for a variety of icon fonts
+
+### [html-entities](https://atom.io/packages/html-entities)
+
+Encode and decode HTML entities
+
+### [autocomplete-html-entities](https://atom.io/packages/autocomplete-html-entities)
+
+An autocomplete-plus 2.0 provider for HTML entities
