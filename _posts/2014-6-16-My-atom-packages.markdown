@@ -150,3 +150,7 @@ Encode and decode HTML entities
 ### [autocomplete-html-entities](https://atom.io/packages/autocomplete-html-entities)
 
 An autocomplete-plus 2.0 provider for HTML entities
+
+### [regex-tester](https://atom.io/packages/regex-tester)
+
+Test Javascript regular expressions
