@@ -2,7 +2,7 @@
 layout: post
 title:  "Upgrade Node.js and NPM"
 date:   2014-6-25
-categories: Tools
+categories: Dev
 ---
 
 ###### upgrade Node.js

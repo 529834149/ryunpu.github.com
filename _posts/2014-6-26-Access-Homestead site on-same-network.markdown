@@ -2,7 +2,7 @@
 layout: post
 title:  "Access Homestead site on same network"
 date:   2014-6-26
-categories: Laravel
+categories: Dev
 ---
 
 ###### Add the following line to your hosts
