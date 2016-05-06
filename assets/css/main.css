@@ -1,14 +1,15 @@
 :focus { outline: none;}
-body { font-size: 16px; }
+body { font-size: 14px; }
 a { color: #666;}
 a:hover, a:focus { outline: none; text-decoration: none; color: #444;}
-p code, li code { margin-left: 5px; margin-right: 5px; white-space: pre-wrap; }
+pre { border-radius: 0;}
+p code, li code { margin-left: 5px; margin-right: 5px; border: none; border-radius: 0; box-shadow: 0 0 1px rgba(0,0,0,.15); white-space: pre-wrap; color: #008c7f; background-color: #f9f9fa;}
 .brand img { position: relative; top: -1em; max-width: 72px; }
 .post-avatar { max-width: 100px; }
 h4, .blog-title { text-transform: none; }
-h2 { margin-top: 45px; margin-bottom: 15px; }
-h3 { margin-top: 40px; text-transform: none; }
-h6 { margin-top: 30px; margin-bottom: 1em; font-size: 16px; text-transform: none;}
+h2 { margin-top: 3em; margin-bottom: 15px; }
+h3 { margin-top: 3em; font-size: 18px; font-weight: bold; text-transform: none; }
+h6 { margin-top: 3em; margin-bottom: 1em; font-size: 14px; font-weight: bold; text-transform: none;}
 h3 + h6 { margin-top: 20px; }
 .post-info { margin-bottom: 48px; }
 .post-template .post-body p { margin: 0; line-height: 1.8;}
@@ -17,5 +18,18 @@ h3 + h6 { margin-top: 20px; }
 .post-template .post-body h6 + p { margin-top: -5px;}
 .post-template .post-body h3 + p { margin-top: -10px;}
 .lead { font-size: inherit; }
-.highlight { margin-bottom: 1em;}
+.highlight { margin-bottom: 1em; border: none; box-shadow: 0 0 1px rgba(0,0,0,.15); background-color: #f9f9fa;}
 p + .highlighter-rouge { margin-top: 10px; }
+
+#masthead { margin-bottom: 36px;}
+#footer { margin-top: 36px;}
+
+.post-body h2, .post-body h3, .post-body h4, .post-body h5, .post-body h6 { position: relative; padding-left: 15px;}
+.post-body h2::before, .post-body h3::before, .post-body h4::before, .post-body h5::before, .post-body h6::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "#";
+    color: #4caf50;
+    font-weight: 400;
+}
