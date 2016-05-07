@@ -3,7 +3,7 @@ body { font-size: 14px; }
 a { color: #666;}
 a:hover, a:focus { outline: none; text-decoration: none; color: #444;}
 pre { border-radius: 0;}
-p code, li code { margin-left: 5px; margin-right: 5px; border: none; border-radius: 0; box-shadow: 0 0 1px rgba(0,0,0,.15); white-space: pre-wrap; color: #008c7f; background-color: #f9f9fa;}
+code.highlighter-rouge, p code, li code { margin-left: 5px; margin-right: 5px; border: none; border-radius: 0; box-shadow: 0 0 1px rgba(0,0,0,.15); white-space: pre-wrap; color: #008c7f; background-color: #f9f9fa;}
 .brand img { position: relative; top: -1em; max-width: 72px; }
 .post-avatar { max-width: 100px; }
 h4, .blog-title { text-transform: none; }
