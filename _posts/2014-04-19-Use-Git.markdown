@@ -52,8 +52,18 @@ doc/*.txt
 doc/**/*.txt
 ```
 
+Untrack Files:
+
 ```bash
-git update-index --assume-unchanged path/to/file
+git rm -r --cached .
+```
+
+```bash
+git add .
+```
+
+```bash
+git commit -m "untrack some files"
 ```
 
 Checking the Status of Your Files:
