@@ -1,7 +1,7 @@
 :focus { outline: none;}
 body { font-size: 14px; }
-a { color: #666;}
-a:hover, a:focus { outline: none; text-decoration: none; color: #444;}
+a { color: #39c492;}
+a:hover, a:focus { outline: none; text-decoration: none; color: #39c492;}
 pre { border-radius: 0;}
 code.highlighter-rouge, p code, li code { margin-left: 5px; margin-right: 5px; border: none; border-radius: 0; box-shadow: 0 0 1px rgba(0,0,0,.15); white-space: pre-wrap; color: #008c7f; background-color: #f9f9fa;}
 .brand img { position: relative; top: -1em; max-width: 72px; }
