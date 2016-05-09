@@ -10,8 +10,6 @@ h4, .blog-title { text-transform: none; }
 h2 { margin-top: 3em; margin-bottom: 15px; }
 h3 { margin-top: 3em; font-size: 18px; font-weight: bold; text-transform: none; }
 h6 { margin-top: 3em; margin-bottom: 1em; font-size: 14px; font-weight: bold; text-transform: none;}
-h6 a { color: #39c492;}
-h6 a:hover { color: #39c492;}
 h3 + h6 { margin-top: 20px; }
 .post-info { margin-bottom: 48px; }
 .post-template .post-body p { margin: 0; line-height: 1.8;}
