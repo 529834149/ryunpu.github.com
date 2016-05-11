@@ -77,6 +77,14 @@ Highlights the current word selected when double clicking
 
 A package to display colors in project and files
 
+### [color-picker](https://atom.io/packages/color-picker)
+
+Right click or press CMD-SHIFT-C/CTRL-ALT-C to open it
+
+### [linter-csslint](https://atom.io/packages/linter-csslint)
+
+Lint CSS on the fly, using csslint
+
 ### [linter-jshint](https://atom.io/packages/linter-jshint)
 
 Linter plugin for JavaScript, using jshint
