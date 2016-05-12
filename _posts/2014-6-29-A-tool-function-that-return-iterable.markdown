@@ -36,3 +36,5 @@ for (const [key,value] of objectEntries(obj)) {
 // first: Jane
 // last: Doe
 ```
+
+###### [exploringjs](http://exploringjs.com/es6/ch_iteration.html)
