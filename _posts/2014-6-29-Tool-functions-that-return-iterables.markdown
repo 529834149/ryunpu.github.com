@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A tool function that return iterable"
+title:  "Tool functions that return iterables"
 date:   2014-6-29
 categories: JavaScript
 ---
@@ -35,6 +35,21 @@ for (const [key,value] of objectEntries(obj)) {
 // Output:
 // first: Jane
 // last: Doe
+```
+
+###### Use Generators
+
+```js
+function* objectEntries(obj) {
+    const propKeys = Reflect.ownKeys(obj);
+
+    for (const propKey of propKeys) {
+        // `yield` returns a value and then pauses
+        // the generator. Later, execution continues
+        // where it was previously paused.
+        yield [propKey, obj[propKey]];
+    }
+}
 ```
 
 ###### [exploringjs](http://exploringjs.com/es6/ch_iteration.html)
