@@ -31,33 +31,29 @@ gulp.task('reload', function() {
 });
 ```
 
-###### content_scripts
+###### background.js
 
 ```js
-// send massage to background
 var reloadSocket = new WebSocket('ws://localhost:9191');
 
 reloadSocket.onopen = function() {
     console.log('connected');
 };
 
-reloadSocket.onmessage = function(massage) {
-    if (massage.data === 'reload') {
-        chrome.runtime.sendMessage('reload');
+reloadSocket.onmessage = function(msg) {
+    if (msg.data === 'reload') {
+		// reload extension
+		chrome.runtime.reload();
     }
 };
-```
 
-###### background.js
-
-```js
-// reload extension
-chrome.runtime.onMessage.addListener(function(massage) {
-    if (massage === 'reload') {
-        chrome.runtime.reload();
-    }
+chrome.tabs.query({
+	active: true,
+	currentWindow: true
+}, function(tabs) {
+	if (!tabs[0].url.includes('chrome-extension://')) {
+		// reload page
+		chrome.tabs.reload();
+	}
 });
-
-// reload page
-chrome.tabs.reload();
 ```
