@@ -42,18 +42,18 @@ reloadSocket.onopen = function() {
 
 reloadSocket.onmessage = function(msg) {
     if (msg.data === 'reload') {
-		// reload extension
-		chrome.runtime.reload();
+        // reload extension
+        chrome.runtime.reload();
     }
 };
 
 chrome.tabs.query({
-	active: true,
-	currentWindow: true
+    active: true,
+    currentWindow: true
 }, function(tabs) {
-	if (!tabs[0].url.includes('chrome-extension://')) {
-		// reload page
-		chrome.tabs.reload();
-	}
+    if (!tabs[0].url.includes('chrome-extension://')) {
+        // reload page
+        chrome.tabs.reload();
+    }
 });
 ```
