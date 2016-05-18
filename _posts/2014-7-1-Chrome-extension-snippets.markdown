@@ -64,6 +64,16 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 });
 ```
 
+###### tabs onActivated
+
+```js
+chrome.tabs.onActivated.addListener(function(activeInfo) {
+    getActiveTab(function(tab) {
+        console.log(tab);
+    });
+});
+```
+
 ###### get cookies
 
 ```js

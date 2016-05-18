@@ -5,9 +5,9 @@ date:   2014-6-30
 categories: Tool
 ---
 
-###### gulpfile.js
+###### `npm install ws --save-dev`
 
-`npm install ws --save-dev`
+###### gulpfile.js
 
 ```js
 gulp.watch(['build/**/*.{js,css,jpeg,png}'], ['reload']);
