@@ -79,7 +79,7 @@ chrome.tabs.onActivated.addListener(function(activeInfo) {
 ```js
 chrome.cookies.get({
     name: 'un',
-    url: 'weibo.com'
+    url: 'http://weibo.com/'
 }, function(cookie) {
     console.log(cookie)
 });
@@ -87,7 +87,7 @@ chrome.cookies.get({
 
 ```js
 chrome.cookies.getAll({
-    url: 'weibo.com'
+    domain: 'weibo.com'
 }, function(cookies) {
     console.log(cookies)
 });
