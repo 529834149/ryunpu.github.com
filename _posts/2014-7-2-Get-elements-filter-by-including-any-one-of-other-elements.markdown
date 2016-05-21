@@ -29,5 +29,5 @@ getIncluded(['as', 'bs', 'cs'], ['a', 'b']);
 // ['as', 'bs']
 
 getIncluded([{ domain: 'as.com'}, { domain: 'bs.com'}, { domain: 'cs.com'}], ['as', 'bs'], 'domain');
-// [{ domain: '.as.com'}, { domain: '.bs.com'}]
+// [{ domain: 'as.com'}, { domain: 'bs.com'}]
 ```
