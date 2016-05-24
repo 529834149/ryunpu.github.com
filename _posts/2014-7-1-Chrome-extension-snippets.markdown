@@ -56,6 +56,14 @@ function getActiveTab(callback) {
 }
 ```
 
+###### tabs onCreated
+
+```js
+chrome.tabs.onCreated.addListener(function(tab) {
+    console.log(tab)
+});
+```
+
 ###### tabs onUpdated
 
 ```js
