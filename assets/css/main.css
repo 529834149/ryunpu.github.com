@@ -1,5 +1,6 @@
 :focus { outline: none;}
 body { font-size: 14px; }
+body.search-overlay { position: fixed; bottom: 0;}
 a { color: #666;}
 a:hover, a:focus { outline: none; text-decoration: none; color: #333;}
 pre { border-radius: 0;}
