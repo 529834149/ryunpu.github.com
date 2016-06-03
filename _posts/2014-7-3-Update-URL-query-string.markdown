@@ -2,6 +2,7 @@
 layout: post
 title:  "Update URL query string"
 date:   2014-7-3
+categories: JavaScript
 ---
 
 ```js
