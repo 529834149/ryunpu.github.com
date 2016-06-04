@@ -1,9 +1,52 @@
 ---
 layout: post
-title:  "Show jQuery validation error with bootstrap popover"
+title:  "Show jQuery validation error with bootstrap"
 date:   2014-7-4
 categories: JavaScript
 ---
+
+```js
+$('form').validate({
+    // set this to false if you don't what to set focus on the first invalid input
+    // focusInvalid: false,
+    
+    rules: {
+        email: {
+            required: true,
+            email: true
+        }
+    },
+
+    messages: {
+        email: {
+            required: '邮箱不能为空',
+            email: '邮箱格式不正确'
+        }
+    },
+
+    highlight: function(element) {
+        $(element).closest('.form-group').addClass('has-error');
+    },
+
+    unhighlight: function(element) {
+        $(element).closest('.form-group').removeClass('has-error');
+    },
+
+    errorElement: 'span',
+
+    errorClass: 'help-block',
+
+    errorPlacement: function(error, element) {
+        if(element.parent('.input-group').length) {
+            error.insertAfter(element.parent());
+        } else {
+            error.insertAfter(element);
+        }
+    }
+});
+```
+
+###### With popover
 
 ```js
 $('form').validate({
