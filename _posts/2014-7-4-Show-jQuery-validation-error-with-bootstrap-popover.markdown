@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Show jQuery validation error width bootstrap popover"
+title:  "Show jQuery validation error with bootstrap popover"
 date:   2014-7-4
 categories: JavaScript
 ---
