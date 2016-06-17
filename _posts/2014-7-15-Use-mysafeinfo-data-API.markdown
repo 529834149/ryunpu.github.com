@@ -13,11 +13,11 @@ categories: Tools
 
 [http://mysafeinfo.com/api/data?list=popular&format=json](http://mysafeinfo.com/api/data?list=popular&format=json)
 
-[http://mysafeinfo.com/api/data?list=englishmonarchs](http://mysafeinfo.com/api/data?list=englishmonarchs)
+[http://mysafeinfo.com/api/data?list=englishmonarchs&format=json](http://mysafeinfo.com/api/data?list=englishmonarchs&format=json)
 
 [http://mysafeinfo.com/api/data?list=alcoholicbeverages&format=json](http://mysafeinfo.com/api/data?list=alcoholicbeverages&format=json)
 
-[http://mysafeinfo.com/api/data?list=humor_quotes](http://mysafeinfo.com/api/data?list=humor_quotes)
+[http://mysafeinfo.com/api/data?list=humor_quotes&format=json](http://mysafeinfo.com/api/data?list=humor_quotes&format=json)
 
 ###### Use the format parameter to request data in a specific format
 
