@@ -2,7 +2,7 @@
 layout: post
 title:  "Chrome extension snippets"
 date:   2014-7-1
-categories: Tool
+categories: Dev
 ---
 
 ###### Send message to background

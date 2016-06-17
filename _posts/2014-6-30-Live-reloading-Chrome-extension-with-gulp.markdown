@@ -2,7 +2,7 @@
 layout: post
 title:  "Live reloading Chrome extension with Gulp"
 date:   2014-6-30
-categories: Tool
+categories: Dev
 ---
 
 ###### `npm install ws --save-dev`
