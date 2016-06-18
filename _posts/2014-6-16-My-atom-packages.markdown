@@ -162,3 +162,7 @@ An autocomplete-plus 2.0 provider for HTML entities
 ### [regex-tester](https://atom.io/packages/regex-tester)
 
 Test Javascript regular expressions
+
+### [block-comment-plus](https://atom.io/packages/block-comment-plus)
+
+Comment your code with block comments
