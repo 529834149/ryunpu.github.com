@@ -94,6 +94,11 @@ git diff
 git diff --staged
 ```
 
+The Git repository browser
+```bash
+gitk
+```
+
 Committing Your Changes:
 
 ```bash
