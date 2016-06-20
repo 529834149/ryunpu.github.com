@@ -95,6 +95,7 @@ git diff --staged
 ```
 
 The Git repository browser
+
 ```bash
 gitk
 ```
