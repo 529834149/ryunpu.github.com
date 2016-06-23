@@ -38,7 +38,6 @@ a#slide, button.menu-button { background: #000;}
 }
 
 div[class*="language-"] { position: relative;}
-div.language-js::after, div.language-html::after, div.language-css::after  { content: ''; position: absolute; right: 0; top: 0; padding: 0 8px; background: #eee;}
-div.language-js::after { content: 'js';}
+div.language-html::after, div.language-css::after  { content: ''; position: absolute; right: 0; top: 0; padding: 0 8px; background: #eee;}
 div.language-html::after { content: 'html';}
 div.language-css::after { content: 'css';}
