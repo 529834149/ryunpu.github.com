@@ -37,6 +37,7 @@ a#slide, button.menu-button { background: #000;}
     color: #4caf50;
     font-weight: 400;
 }
+.post-body li { margin-bottom: 10px;}
 
 div[class*="language-"] { position: relative;}
 div.language-html::after, div.language-css::after  { content: ''; position: absolute; right: 0; top: 0; padding: 0 8px; background: #eee;}
