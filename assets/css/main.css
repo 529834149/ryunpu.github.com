@@ -7,8 +7,8 @@ ul { padding: 0; list-style-position: inside;}
 pre { border-radius: 0;}
 code.highlighter-rouge, p code, li code { margin-left: 5px; margin-right: 5px; border: none; border-radius: 0; box-shadow: 0 0 1px rgba(0,0,0,.15); white-space: pre-wrap; color: #008c7f; background-color: #f9f9fa;}
 .brand img { position: relative; top: -1em; max-width: 72px; border-radius: 0; transition: border-radius .5s ease;}
-.brand img:hover { border-radius: 50%;}
 .post-avatar { max-width: 72px; }
+.brand h1 { display: none;}
 h4, .blog-title { text-transform: none; }
 h2 { margin-top: 3em; margin-bottom: 15px; }
 h3 { margin-top: 3em; font-size: 18px; font-weight: bold; text-transform: none; }
