@@ -9,7 +9,7 @@ code.highlighter-rouge, p code, li code { margin-left: 5px; margin-right: 5px; b
 .brand img { position: relative; top: -1em; max-width: 72px; border-radius: 0; transition: border-radius .5s ease;}
 .post-avatar { max-width: 72px; }
 h4, .blog-title { text-transform: none; }
-h1 { display: none;}
+.brand h1 { display: none;}
 h2 { margin-top: 3em; margin-bottom: 15px; }
 h3 { margin-top: 3em; font-size: 18px; font-weight: bold; text-transform: none; }
 h6 { margin-top: 3em; margin-bottom: 1em; font-size: 14px; font-weight: bold; text-transform: none;}
