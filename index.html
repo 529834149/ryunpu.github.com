@@ -1,9 +1,9 @@
 ---
 layout: home
 title: Latest Posts
-description: "The personal blog of Pym, a front end developer"
+description: "The personal blog of RyunPu, a front end developer"
 headline: An Engineer's Diary
-tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
+tags: [RyunPu, blog, engineering, EST, developer, front-end]
 ---
 {% if site.paginate %}
 	{% for post in paginator.posts %}
@@ -94,7 +94,7 @@ tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
 	                        in <span class="post-tags">{% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>&nbsp;<span class="post-tags">by {{ site.owner.name }}</span>
 	                        <div class="post-body bordered-bottom"></div>
 	                    </div>
-	                </header>    
+	                </header>
 	            </article>
 	        </div>
 	        {% endif %}
@@ -244,7 +244,7 @@ tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
 {% endif %}
 {% endif %}
     <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
- {% if paginator.next_page %}   
+ {% if paginator.next_page %}
         <a class="older-posts" href="{{ site.url }}/page{{ paginator.next_page }}">Older Posts &rarr;</a>
  {% endif %}
 </nav>
@@ -336,7 +336,7 @@ tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
 	                        in <span class="post-tags">{% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>&nbsp;<span class="post-tags">by {{ site.owner.name }}</span>
 	                        <div class="post-body bordered-bottom"></div>
 	                    </div>
-	                </header>    
+	                </header>
 	            </article>
 	        </div>
 	        {% endif %}
@@ -473,5 +473,5 @@ tags: [Pym, endless3000, moamaoa, blog, engineering, EST]
 	            </article>
 	        </div>
 			{% endif %}
-	{% endfor %}  
+	{% endfor %}
 {% endif %}

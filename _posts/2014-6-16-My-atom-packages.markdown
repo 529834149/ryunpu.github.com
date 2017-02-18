@@ -20,6 +20,12 @@ to expand abbreviations with Tab key, add the following section in your ```keyma
   'tab': 'emmet:expand-abbreviation-with-tab'
 ```
 
+Balance(inward): ```ctrl-)```
+
+Balance(outward): ```ctrl-d```
+
+Merge Lines: ```shift-cmd-m```
+
 ### [todo-show](https://atom.io/packages/todo-show)
 
 Finds all the TODOs, FIXMEs, CHANGEDs, etc. in your project ```ctrl-shift-T```
@@ -170,3 +176,27 @@ Comment your code with block comments
 ### [react](https://atom.io/packages/react)
 
 React.js (JSX) language support, indentation, snippets, auto completion, reformatting
+
+### [minimap](https://atom.io/packages/minimap)
+
+A preview of the full source code
+
+### [minimap-autohide](https://atom.io/packages/minimap-autohide)
+
+Automatically hide the minimap when you aren't using it
+
+### [autoprefixer](https://atom.io/packages/autoprefixer)
+
+Prefix CSS and SCSS
+
+### [language-babel](https://atom.io/packages/language-babel)
+
+JavaScript ES201x, React JSX, Flow and GraphQL Grammar. Babel Transpiler
+
+### [remote-edit](https://atom.io/packages/remote-edit)
+
+Browse and edit remote files using SFTP and FTP
+
+### [git-plus](https://atom.io/packages/git-plus)
+
+Do git things without the terminal

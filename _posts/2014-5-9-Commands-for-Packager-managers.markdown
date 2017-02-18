@@ -36,7 +36,7 @@ categories: Tools
   </tr>
   <tr>
     <td>List of all packages installed globally</td>
-    <td><code>npm ls -g</code></td>
+    <td><code>npm ls -g --depth=0</code></td>
     <td><code>composer show <br>--installed</code> (locally)</td>
     <td><code>pip freeze</code></td>
     <td><code>gem list</code></td>
