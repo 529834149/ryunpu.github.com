@@ -200,3 +200,15 @@ Browse and edit remote files using SFTP and FTP
 ### [git-plus](https://atom.io/packages/git-plus)
 
 Do git things without the terminal
+
+### [atom-material-ui](https://atom.io/themes/atom-material-ui)
+
+A dark UI theme for Atom that follows Google's Material Design Guidelines
+
+### [merge-conflicts](https://atom.io/packages/merge-conflicts)
+
+Resolve git conflicts within Atom
+
+### [atom-shortcuts](https://atom.io/packages/atom-shortcuts)
+
+Helps you learn Atom's shortcuts, hit ```ctrl-` ``` to see a shortcut cheatsheet
