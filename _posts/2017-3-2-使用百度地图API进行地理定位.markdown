@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "利用百度地图API进行地理定位"
+title:  "使用百度地图 API 进行地理定位"
 date:   2017-3-2
 categories: JavaScript
 comments: true
 ---
 
 ```js
-// 利用百度地图API完成地理定位
+// 使用百度地图API完成地理定位
 $.fn.baiduFindMe = function(options) {
     var cfgs = $.extend({
         ak: '',
@@ -48,7 +48,7 @@ $.fn.baiduFindMe = function(options) {
 <br>
 
 ```js
-// 利用html5进行初始定位，再用百度地图API转换
+// 使用html5进行初始定位，再用百度地图API转换
 $.fn.geoFindMe = function(options) {
     var cfgs = $.extend({
         ak: '',
