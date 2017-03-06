@@ -44,9 +44,9 @@ categories: JavaScript
 * When optimizating, focus on the big things
 
     * Excessive DOM changes that force the page to re-render
-    
+
     * Events that get fired all the time (for example, resizing/scrolling)
-    
+
     * Lots of HTTP requests (and even this is becoming less important)
 
 
@@ -56,4 +56,4 @@ categories: JavaScript
 
 * Going overboard with file concatenation
 
-see more: <a href="http://javascript.crockford.com/code.html" target="_blank">crockford</a>, <a href="https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml" target="_blank">googlecode</a>, <a href="https://github.com/stevekwan/best-practices/blob/master/javascript/best-practices.md" target="_blank">best-practices</a>
+see more: <a href="http://javascript.crockford.com/code.html" target="_blank">crockford</a>, <a href="http://www.whoishostingthis.com/resources/javascript-style/" target="_blank">JavaScript Style Guide</a>, <a href="https://github.com/stevekwan/best-practices/blob/master/javascript/best-practices.md" target="_blank">best-practices</a>
