@@ -175,6 +175,9 @@ git remote -v
 git remote add [bookmark] [url]
 ```
 ```bash
+git remote update [bookmark]
+```
+```bash
 git fetch [bookmark]
 ```
 ```bash
