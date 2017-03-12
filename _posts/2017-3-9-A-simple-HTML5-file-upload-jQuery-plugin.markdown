@@ -135,6 +135,7 @@ comments: true
             $.each(xhrs, function(i, xhr) {
                 if (xhr.index === index) {
                     xhr.xhr.abort();
+                    return false;
                 }
             });
         });

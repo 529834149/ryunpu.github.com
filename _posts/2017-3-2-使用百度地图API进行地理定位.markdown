@@ -12,7 +12,7 @@ $.fn.baiduFindMe = function(options) {
     var cfgs = $.extend({
         ak: '',
         onSuccess: null,
-        onError: null
+        onError: function() {}
     }, options);
 
     var $el = $(this);
@@ -20,6 +20,11 @@ $.fn.baiduFindMe = function(options) {
     var geolocation = new BMap.Geolocation();
 
     geolocation.getCurrentPosition(function(r) {
+        if(r.accuracy === null){
+            cfgs.onError('用户拒绝地理位置授权');
+            return;
+        }
+
         if (this.getStatus() == BMAP_STATUS_SUCCESS) {
             $.getJSON(geocodingUrl, { location: r.point.lat + ',' + r.point.lng }, function(data) {
                 if (data.status === 0) {
@@ -31,14 +36,10 @@ $.fn.baiduFindMe = function(options) {
                 }
             })
             .fail(function(jqXHR, textStatus, errorThrown) {
-                if (typeof cfgs.onError === 'function') {
-                    cfgs.onError(textStatus);
-                }
+                cfgs.onError(textStatus);
             });
         } else {
-            if (typeof cfgs.onError === 'function') {
-                cfgs.onError(this.getStatus());
-            }
+            cfgs.onError(this.getStatus());
         }
     });
 
