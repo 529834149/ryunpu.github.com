@@ -212,3 +212,7 @@ Resolve git conflicts within Atom
 ### [atom-shortcuts](https://atom.io/packages/atom-shortcuts)
 
 Helps you learn Atom's shortcuts, hit ```ctrl-` ``` to see a shortcut cheatsheet
+
+### [atom-minify](https://atom.io/packages/atom-minify)
+
+Minifies JS and CSS files, optionally on save

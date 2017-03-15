@@ -20,7 +20,7 @@ $.fn.baiduFindMe = function(options) {
     var geolocation = new BMap.Geolocation();
 
     geolocation.getCurrentPosition(function(r) {
-        if(r.accuracy === null){
+        if (r.accuracy === null) {
             cfgs.onError('用户拒绝地理位置授权');
             return;
         }
