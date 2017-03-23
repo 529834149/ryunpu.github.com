@@ -44,6 +44,9 @@ Pushing to a remote
 ```
 git push <REMOTENAME> <BRANCHNAME>
 ```
+```
+git push <REMOTENAME> HEAD:<BRANCHNAME>
+```
 
 Renaming branches
 
