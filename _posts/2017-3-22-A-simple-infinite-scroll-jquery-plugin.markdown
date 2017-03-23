@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A simple infinite scroll jQuery plugin"
-date:   2017-03-15
+date:   2017-03-22
 categories: JavaScript
 ---
 
