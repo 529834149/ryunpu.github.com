@@ -14,7 +14,7 @@ comments: true
             tmpl: '',
             uploadBtn: '',
             previewContainer: '',
-            mutiple: false,
+            multiple: false,
             onProgress: null,
             onSuccess: null,
             onError: null
@@ -47,7 +47,7 @@ comments: true
                     src = e.target.result;
                 }
 
-                if (!cfgs.mutiple) {
+                if (!cfgs.multiple) {
                     $previewContainer.css('background-image', 'url(' + src + ')');
                 } else {
                     newTmpl = newTmpl.replace('#url#', src).replace('#index#', file.uploadIndex);
