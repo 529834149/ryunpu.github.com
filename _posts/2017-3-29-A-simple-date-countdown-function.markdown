@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A simple date countdown function"
-date:   2017-03-22
+date:   2017-03-29
 categories: JavaScript
 ---
 
