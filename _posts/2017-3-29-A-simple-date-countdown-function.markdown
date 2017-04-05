@@ -57,3 +57,12 @@ function countdown(options) {
     }
 }
 ```
+
+```html
+<div class="countdown-date">
+    <span>0</span><span>0</span>天
+    <span>0</span><span>0</span>时
+    <span>0</span><span>0</span>分
+    <span>0</span><span>0</span>秒
+</div>
+```

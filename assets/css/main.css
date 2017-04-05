@@ -23,6 +23,7 @@ h3 + h6 { margin-top: 20px; }
 .lead { font-size: inherit; }
 .highlight { margin-bottom: 1em; border: none; box-shadow: 0 0 1px rgba(0,0,0,.15); background-color: #f9f9fa;}
 p + .highlighter-rouge { margin-top: 10px; }
+.highlighter-rouge + .highlighter-rouge { margin-top: 2em;}
 a#slide, button.menu-button { background: #000;}
 
 #masthead { margin-bottom: 36px;}
