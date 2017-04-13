@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "新浪股票相关接口"
+title:  "新浪股票查询接口"
 date:   2017-04-13
 categories: JavaScript
 ---
@@ -36,7 +36,7 @@ function getSuggestion(str) {
 }
 ```
 
-### 股票基本信息
+### 股票基本信息查询
 
 ```js
 function getCode(code) {
