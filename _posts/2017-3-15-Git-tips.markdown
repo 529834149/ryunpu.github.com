@@ -63,7 +63,7 @@ git push <REMOTENAME> :<BRANCHNAME>
 Checkout a remote branch
 
 ```
-git checkout -b <LOCALBRANCHNAME> <REMOTENAME>:<REMOTEBRANCHNAME>
+git checkout -b <LOCALBRANCHNAME> <REMOTENAME>/<REMOTEBRANCHNAME>
 ```
 
 
