@@ -12,19 +12,19 @@ function stickFooter(selector, placeholder) {
     var bottom = $el.css('bottom');
 
     function reposition() {
+        var bodyHeight = $('body').outerHeight();
+        var winHeight = $(window).height();
+
         $(placeholder).hide();
         $el.removeClass('fixed').css({
             position: position,
             bottom: bottom
         });
 
-        var bodyHeight = $('body').height();
-        var winHeight = $(window).height();
-
-        if (bodyHeight < winHeight) {
+        if (bodyHeight <= winHeight) {
             $el.addClass('fixed').css({
                 position: 'fixed',
-                bottom: 0
+                bottom: bottom
             });
 
             $(placeholder).height($el.outerHeight()).show();

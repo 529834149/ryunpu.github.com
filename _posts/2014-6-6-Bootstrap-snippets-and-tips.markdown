@@ -50,6 +50,14 @@ $(window).on('resize', function() {
 });
 ```
 
+######  Popup modal from bottom
+
+```css
+.modal.fade .modal-dialog { transform: translate3d(0, 100vh, 0);}
+.modal.in .modal-dialog { transform: translate3d(0, 0, 0);}
+.modal .modal-dialog { position: absolute; left: 0; right: 0; bottom: 0;}
+```
+
 ###### Set modal dialog's max height:
 
 ```js
