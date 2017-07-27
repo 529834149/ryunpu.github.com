@@ -52,3 +52,7 @@ A Sketch plugin that selects layers with the same fill or border color
 ### [sketch-subtlepatterns](https://github.com/dunckr/sketch-subtlepatterns)
 
 Import Subtle Patterns as shape fills in Sketch
+
+### [UserFlows](https://github.com/abynim/userflows)
+
+A plugin for generating user walkthroughs from Artboards in Sketch

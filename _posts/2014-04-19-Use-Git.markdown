@@ -178,6 +178,9 @@ git remote add [bookmark] [url]
 git remote update [bookmark]
 ```
 ```bash
+git remote set-url origin [url]
+```
+```bash
 git fetch [bookmark]
 ```
 ```bash
