@@ -151,6 +151,10 @@ Undoing Things:
 git commit --amend
 ```
 ```bash
+git commit --amend -m "<right message>"
+git push --force-with-lease <repository> <branch>
+```
+```bash
 git reset --soft HEAD^
 ```
 ```bash

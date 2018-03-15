@@ -30,6 +30,7 @@ Route::get('/', function () {
 
 ###### extends, yield and section
 
+{% raw %}
 ```php
 @extends('home.layouts.app')
 
@@ -40,6 +41,7 @@ Route::get('/', function () {
     <script></script>
 @endsection
 ```
+{% endraw %}
 
 ###### forelse
 
@@ -51,6 +53,7 @@ Route::get('/', function () {
     <p>没有用户</p>
 @endforelse
 ```
+{% endraw %}
 
 ###### X-CSRF-TOKEN
 
