@@ -82,7 +82,7 @@ kramdown:
 
 prose:
   rooturl: '_posts'
-  siteurl: ''
+  siteurl: '/'
   relativeLinks:
   media: 'images'
   metadata:
